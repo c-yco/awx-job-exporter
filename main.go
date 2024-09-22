@@ -39,8 +39,8 @@ type AWXJob struct {
 	Organization struct {
 		Name string `json:"name"`
 	} `json:"summary_fields.organization"`
-	jobId   int     `json:"id"`
-	elapsed float32 `json:"elapsed"`
+	JobId   int     `json:"id"`
+	Elapsed float32 `json:"elapsed"`
 }
 
 type AWXResponse struct {
@@ -142,7 +142,7 @@ func recordAWXMetrics() {
 
 			for _, job := range awxResponse.Results {
 				orgName := job.Organization.Name
-				jobID := job.jobId
+				jobID := job.JobId
 				// Kombiniere alle Job-Labels zu einem String
 				var jobLabels []string
 				for _, label := range job.Labels {
