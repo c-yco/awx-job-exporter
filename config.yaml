@@ -1,0 +1,13 @@
+awx:
+  api_url: "http://host.docker.internal:32349/api/v2/jobs/"
+  username: "admin"
+  password: "TJPeN46LB1C1hDmBuY7ymppOObeQrv97"
+
+whitelist:
+  enabled: false
+  # organizations:
+  #   - "Org1"
+  #   - "Org2"
+  # labels:
+  #   - "Kodi"
+  #   - "Land1"
